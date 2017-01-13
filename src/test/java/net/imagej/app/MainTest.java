@@ -55,6 +55,7 @@ public class MainTest {
 	public void testMains() {
 		final ImageJ ij = Main.launch("--main", Concatenate.class.getName(), //
 			"kung", "-", "fu");
+//Prueba prueba prueba
 		assertEquals("kung-fu", Concatenate.s);
 		final boolean headless = ij.ui().isHeadless();
 		assertEquals(headless, ij.get(LitmusService.class).isDisposed());
